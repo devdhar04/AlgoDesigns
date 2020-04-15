@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AlgoDesigns.iml" filepath="$PROJECT_DIR$/.idea/modules/AlgoDesigns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algo_Design.iml" filepath="$PROJECT_DIR$/.idea/modules/Algo_Design.iml" group="Algo_Design" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Algo Design/app" />
     </modules>
   </component>
 </project>

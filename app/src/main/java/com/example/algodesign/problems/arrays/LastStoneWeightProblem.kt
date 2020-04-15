@@ -12,25 +12,27 @@ class LastStoneWeightProblem : ProblemInterface {
     fun lastStoneWeight(stones: IntArray): Int {
         val list = stones.sortedDescending().toMutableList()
         list.forEachIndexed { index, it ->
-            val x = it
-            val y = list[index + 1]
-            if(index < list.size - 1 ) {
-                if (x == y) {
-                    list.removeAt(index + 1)
-                    list.removeAt(index)
-                }
-                else if( x < y){
-                    list.set(index+1,y-x)
-                    list.removeAt(index)
-                }
-                else{ // x>y
-                    list.removeAt(index+1)
-                    list.set(index,x-y)
+            if(index + 1 <= list.size-1) {
+                val x = it
+                val y = list[index + 1]
+                if (index < list.size - 1) {
+                    if (x == y) {
+                        list.set(index + 1, 0)
+                        list.set(index, 0)
+                    } else if (x < y) {
+                        list.set(index + 1, y - x)
+                        list.set(index, 0)
+                    } else { // x>y
+                        list.set(index + 1, 0)
+                        list.set(index, x - y)
+                    }
                 }
             }
         }
     return 0
     }
+
+
 
     override fun execute() {
         Log.v(
