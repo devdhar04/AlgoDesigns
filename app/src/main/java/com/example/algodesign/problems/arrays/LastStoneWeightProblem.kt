@@ -2,6 +2,7 @@ package com.example.algodesign.problems.arrays
 
 import android.util.Log
 import com.example.algodesign.problems.ProblemInterface
+import java.util.*
 
 /**
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3297/
@@ -10,34 +11,28 @@ import com.example.algodesign.problems.ProblemInterface
 class LastStoneWeightProblem : ProblemInterface {
     // 2,7,4,1,8,1)
     fun lastStoneWeight(stones: IntArray): Int {
-        val list = stones.sortedDescending().toMutableList()
-        list.forEachIndexed { index, it ->
-            if(index + 1 <= list.size-1) {
-                val x = it
-                val y = list[index + 1]
-                if (index < list.size - 1) {
-                    if (x == y) {
-                        list.set(index + 1, 0)
-                        list.set(index, 0)
-                    } else if (x < y) {
-                        list.set(index + 1, y - x)
-                        list.set(index, 0)
-                    } else { // x>y
-                        list.set(index + 1, 0)
-                        list.set(index, x - y)
-                    }
-                }
+
+        val maxHeap = PriorityQueue<Int>()
+        stones.forEach {
+            maxHeap.add(-it)
+        }
+        while (maxHeap.size > 1) {
+            val x = -maxHeap.remove()
+            val y = -maxHeap.remove()
+            if (x < y) {
+                maxHeap.add(-(y - x))
+            } else if (x > y) {
+                maxHeap.add(-(x - y))
             }
         }
-    return 0
+        return if(maxHeap.isEmpty()) 0 else -maxHeap.first()
     }
-
 
 
     override fun execute() {
         Log.v(
             "LastStoneWeightProblem",
-            "LastStoneWeightProblem ${lastStoneWeight(intArrayOf(2, 7, 4, 1, 8, 1))}"
+            "LastStoneWeightProblem ${lastStoneWeight(intArrayOf(2, 2))}"
         )
     }
 }

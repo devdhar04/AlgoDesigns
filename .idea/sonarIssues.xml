@@ -8,6 +8,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/analytics/src/main/java/jp/ne/paypay/android/analytics/GTMConstants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/kyc/viewController/KycParentViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/payment/adapter/PaymentDetailBreakDownAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/profile/viewController/ProfileViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
