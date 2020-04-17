@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         SingleNumberProblem().singleNumber(intArrayOf(1,2,3,1,2))
 
         Log.v("HappyNumberProblem","HappyNumberProblem ${ HappyNumberProblem().isHappy(1111111)}")
-        Log.v("BinaryTreeDiameter","BinaryTreeDiameter ${ BinaryTreeDiameter().execute()}")
+        Log.v("ContiguousArrayProblem","ContiguousArrayProblem ${ ContiguousArrayProblem().execute()}")
         LastStoneWeightProblem().execute()
 
     }
