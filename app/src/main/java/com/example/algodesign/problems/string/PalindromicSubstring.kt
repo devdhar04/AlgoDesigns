@@ -1,4 +1,4 @@
-package com.example.algodesign.strings
+package com.example.algodesign.problems.string
 
 class PalindromicSubstring {
 

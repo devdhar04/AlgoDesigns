@@ -18,7 +18,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/arrays/MinimumPathSum.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/arrays/NumberOfIsland.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/arrays/ProductOfArray.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/PerformStringShifts.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/ValidParenthesisString.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../pay2-android/analytics/src/main/java/jp/ne/paypay/android/analytics/GTMConstants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/kyc/viewController/KycConfirmCardTypeViewController.kt">
           <value>
             <set />
           </value>
@@ -34,6 +69,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/profile/viewController/ProfileViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/res/layout/document_camera_preview.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/res/layout/document_front_camera_preview.xml">
           <value>
             <set />
           </value>

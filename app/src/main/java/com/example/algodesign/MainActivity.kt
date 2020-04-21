@@ -3,19 +3,16 @@ package com.example.algodesign
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.algodesign.problems.SubArrayProblem
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.graph.AdjacencyList
-import com.example.algodesign.problems.BuyandSellStockProblem
 import com.example.algodesign.problems.HappyNumberProblem
-import com.example.algodesign.problems.arrays.*
-import com.example.algodesign.problems.stack.MinimumStackProblem
-import com.example.algodesign.problems.tree.BinaryTreeDiameter
-import com.example.algodesign.string.Anagram
-import com.example.algodesign.string.BackspaceStringCompareProblem
-import com.example.algodesign.strings.PalindromicSubstring
-
-
+import com.example.algodesign.problems.SubArrayProblem
+import com.example.algodesign.problems.arrays.ContiguousArrayProblem
+import com.example.algodesign.problems.arrays.LastStoneWeightProblem
+import com.example.algodesign.problems.arrays.NumberOfIsland
+import com.example.algodesign.problems.arrays.SingleNumberProblem
+import com.example.algodesign.problems.string.Anagram
+import com.example.algodesign.problems.string.PalindromicSubstring
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,7 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         Log.v("SubArrayProblem","SubArrayProblem ${SubArrayProblem().subarraySum(intArrayOf(-1,-1,1),0)}")
 
-        Log.v("countSubstrings","countSubstrings ${PalindromicSubstring().countSubstrings("Bananas")}")
+        Log.v("countSubstrings","countSubstrings ${PalindromicSubstring()
+            .countSubstrings("Bananas")}")
         val charArray = charArrayOf('a','b','c','d','e')
         Anagram().minSteps("anagram","mangaar")
         AdjacencyList()
@@ -52,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         Log.v("HappyNumberProblem","HappyNumberProblem ${ HappyNumberProblem().isHappy(1111111)}")
         Log.v("ContiguousArrayProblem","ContiguousArrayProblem ${ ContiguousArrayProblem().execute()}")
         LastStoneWeightProblem().execute()
+        NumberOfIsland().execute()
 
     }
     //'a','b','c','d'

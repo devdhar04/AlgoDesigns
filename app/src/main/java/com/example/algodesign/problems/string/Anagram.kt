@@ -1,4 +1,4 @@
-package com.example.algodesign.string
+package com.example.algodesign.problems.string
 
 import android.util.Log
 
