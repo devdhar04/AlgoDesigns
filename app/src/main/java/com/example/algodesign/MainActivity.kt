@@ -1,16 +1,19 @@
 package com.example.algodesign
 
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.algodesign.adapter.ProblemAdapter
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
-import com.example.algodesign.problems.SubArrayProblem
-import com.example.algodesign.problems.arrays.ContiguousArrayProblem
-import com.example.algodesign.problems.arrays.LastStoneWeightProblem
-import com.example.algodesign.problems.arrays.NumberOfIsland
-import com.example.algodesign.problems.arrays.SingleNumberProblem
+import com.example.algodesign.problems.LruCache.LruCache
+import com.example.algodesign.problems.arrays.SubArrayProblem
+import com.example.algodesign.problems.arrays.*
+import com.example.algodesign.problems.binarySearch.FirstBadVersion
 import com.example.algodesign.problems.string.Anagram
 import com.example.algodesign.problems.string.PalindromicSubstring
 
@@ -18,11 +21,19 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        Log.v("SubArrayProblem","SubArrayProblem ${SubArrayProblem().subarraySum(intArrayOf(-1,-1,1),0)}")
+        binding = ActivityMainBinding.inflate(LayoutInflater.from(applicationContext))
+        setContentView(binding.root)
+        binding.recyclerView.apply {
+            adapter = ProblemAdapter(ProblemAdapter.problems)
+        }
+
+
+        Log.v("SubArrayProblem","SubArrayProblem ${SubArrayProblem()
+            .subarraySum(intArrayOf(1,2,1,2,1),3)}")
 
         Log.v("countSubstrings","countSubstrings ${PalindromicSubstring()
             .countSubstrings("Bananas")}")
@@ -50,7 +61,9 @@ class MainActivity : AppCompatActivity() {
         Log.v("HappyNumberProblem","HappyNumberProblem ${ HappyNumberProblem().isHappy(1111111)}")
         Log.v("ContiguousArrayProblem","ContiguousArrayProblem ${ ContiguousArrayProblem().execute()}")
         LastStoneWeightProblem().execute()
-        NumberOfIsland().execute()
+        LruCache(2).execute()
+
+        FirstBadVersion().execute()
 
     }
     //'a','b','c','d'
