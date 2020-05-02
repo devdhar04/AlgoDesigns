@@ -111,3 +111,12 @@ build/kotlin/sessions/kotlin-compiler-5760460135599398582.salive
 .idea/sonarlint/issuestore/index.pb
 .idea/sonarlint/issuestore/1/e/1eae876376bcb6ace8787345c176b95558789ce1
 .idea/sonarIssues.xml
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/checksums/checksums.lock
+.gradle/checksums/md5-checksums.bin
+.gradle/checksums/sha1-checksums.bin
+.idea/caches/build_file_checksums.ser
+.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml
+.idea/misc.xml
+.idea/modules/app/app.iml
+.idea/sonarIssues.xml

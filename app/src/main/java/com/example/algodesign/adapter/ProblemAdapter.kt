@@ -35,9 +35,12 @@ class ProblemAdapter(private val list: List<Problem>) : RecyclerView.Adapter<Pro
 
     companion object{
         val problems = mutableListOf(
-            Problem("First Bad Version\n",
+            Problem("First Bad Version",
                 "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3316/",
-            "")
+            ""),
+            Problem("Jewels And Stones Problem",
+                "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3317/",
+                "")
 
         )
 

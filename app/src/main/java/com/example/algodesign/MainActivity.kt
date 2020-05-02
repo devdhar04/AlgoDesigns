@@ -6,14 +6,14 @@ import android.util.Log
 import android.view.LayoutInflater
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import com.example.algodesign.adapter.ProblemAdapter
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
 import com.example.algodesign.problems.LruCache.LruCache
-import com.example.algodesign.problems.arrays.SubArrayProblem
 import com.example.algodesign.problems.arrays.*
-import com.example.algodesign.problems.binarySearch.FirstBadVersion
 import com.example.algodesign.problems.string.Anagram
 import com.example.algodesign.problems.string.PalindromicSubstring
 
@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.recyclerView.apply {
             adapter = ProblemAdapter(ProblemAdapter.problems)
+            addItemDecoration(DividerItemDecoration(applicationContext,
+                DividerItemDecoration.VERTICAL).apply {
+                setDrawable( ContextCompat.getDrawable(applicationContext,R.drawable.divider_shape)!!)
+            })
         }
 
 
@@ -63,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
-        FirstBadVersion().execute()
+        JewelsAndStonesProblem().execute()
 
     }
     //'a','b','c','d'
