@@ -1,4 +1,4 @@
-package com.example.algodesign
+package com.example.algodesign.view
 
 import android.os.Build
 import android.os.Bundle
@@ -6,9 +6,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.DividerItemDecoration
-import com.example.algodesign.adapter.ProblemAdapter
+import androidx.navigation.fragment.NavHostFragment
+import com.example.algodesign.R
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
@@ -16,6 +15,7 @@ import com.example.algodesign.problems.LruCache.LruCache
 import com.example.algodesign.problems.arrays.*
 import com.example.algodesign.problems.string.Anagram
 import com.example.algodesign.problems.string.PalindromicSubstring
+import com.example.algodesign.problems.string.RansomNote
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,13 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(LayoutInflater.from(applicationContext))
         setContentView(binding.root)
-        binding.recyclerView.apply {
-            adapter = ProblemAdapter(ProblemAdapter.problems)
-            addItemDecoration(DividerItemDecoration(applicationContext,
-                DividerItemDecoration.VERTICAL).apply {
-                setDrawable( ContextCompat.getDrawable(applicationContext,R.drawable.divider_shape)!!)
-            })
-        }
+        val host = NavHostFragment.create(R.navigation.nav_graph)
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, host).setPrimaryNavigationFragment(host).commit()
+
 
 
         Log.v("SubArrayProblem","SubArrayProblem ${SubArrayProblem()
@@ -67,9 +63,10 @@ class MainActivity : AppCompatActivity() {
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
-        JewelsAndStonesProblem().execute()
+        RansomNote().execute()
 
     }
+
     //'a','b','c','d'
     // https://leetcode.com/problems/reverse-string/submissions/
     fun reverseString(s: CharArray): Unit {

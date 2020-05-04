@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/problemListFragment">
+
+    <fragment
+        android:id="@+id/problemListFragment"
+        android:name="com.example.algodesign.view.fragment.ProblemListFragment"
+        android:label="problemListFragment"
+        tools:layout="@layout/fragment_problem_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/problemDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/problemDetailFragment"
+        android:name="com.example.algodesign.view.fragment.ProblemDetailFragment"
+        android:label="fragment_problem_detail"
+        tools:layout="@layout/fragment_problem_detail" >
+        <argument
+            android:name="problemUrl"
+            android:defaultValue="Andy"
+            app:argType="string" />
+    </fragment>
+</navigation>
