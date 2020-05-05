@@ -1,0 +1,34 @@
+{
+  "problemList": [
+    {
+      "title": "First Bad Version",
+      "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3316/",
+      "solutionUrl": "https://gist.github.com/devdhar04/1f728fbfdffd4e5112ad524cfdcd9675",
+      "problemSourceType": "LEETCODE"
+    },
+    {
+      "title": "Jewels And Stones Problem",
+      "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3317/",
+      "solutionUrl": "https://gist.github.com/devdhar04/b4f1df7aeb08f987e28a9a49da43d5b4",
+      "problemSourceType": "LEETCODE"
+    },
+    {
+      "title": "Ransom Note Problem",
+      "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3318/",
+      "solutionUrl": "https://gist.github.com/devdhar04/60cdc323558692ec459306c776b71db7",
+      "problemSourceType": "LEETCODE"
+    },
+    {
+      "title": "Number Complement Problem",
+      "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3319/",
+      "solutionUrl": "https://gist.github.com/devdhar04/624db9f1ca6c3863f5b791b6fd8394c3",
+      "problemSourceType": "LEETCODE"
+    },
+    {
+      "title": "First Unique Character",
+      "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3320/",
+      "solutionUrl": "https://gist.github.com/devdhar04/dfc63494d1ef97807f8b67845313e41d",
+      "problemSourceType": "LEETCODE"
+    }
+  ]
+}

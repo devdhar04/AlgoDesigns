@@ -9,11 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.algodesign.R
 import com.example.algodesign.databinding.ActivityMainBinding
-import com.example.algodesign.graph.AdjacencyList
+import com.example.algodesign.problems.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
 import com.example.algodesign.problems.LruCache.LruCache
 import com.example.algodesign.problems.arrays.*
 import com.example.algodesign.problems.string.Anagram
+import com.example.algodesign.problems.string.FirstUniqueCharacter
 import com.example.algodesign.problems.string.PalindromicSubstring
 import com.example.algodesign.problems.string.RansomNote
 
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
-        RansomNote().execute()
+        FirstUniqueCharacter().execute()
 
     }
 

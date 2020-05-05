@@ -1,6 +1,7 @@
 package com.example.algodesign.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,13 @@ import com.example.algodesign.R
 import com.example.algodesign.view.adapter.ProblemAdapter
 import com.example.algodesign.databinding.FragmentProblemListBinding
 import com.example.algodesign.model.Problem
+import com.example.algodesign.view.data.AdapterData
+import com.example.algodesign.viewmodel.ProblemViewModel
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.rxkotlin.addTo
+import io.reactivex.rxkotlin.subscribeBy
+import org.koin.core.KoinComponent
+import org.koin.core.inject
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,12 +31,16 @@ private const val ARG_PARAM2 = "param2"
  * Use the [ProblemListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ProblemListFragment : Fragment() {
+class ProblemListFragment : Fragment() ,KoinComponent{
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
     lateinit var binding : FragmentProblemListBinding
+
+    private val compositeDisposable = CompositeDisposable()
+
+    private val viewModel by inject<ProblemViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,22 +57,26 @@ class ProblemListFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentProblemListBinding.inflate(inflater,container,false)
         binding.toolbar.title = "Problems List"
-        binding.recyclerView.apply {
-            adapter = ProblemAdapter(ProblemAdapter.problems,object:ProblemAdapter.ItemClickListener{
-                override fun onClick(problem: Problem) {
-                   val action = ProblemListFragmentDirections.actionListFragmentToDetailFragment()
-                    action.setProblemUrl(problem.solutionUrl)
-                    findNavController().navigate(action)
+
+        viewModel.getProblemList()
+            .subscribeBy {
+                binding.recyclerView.apply {
+                    adapter = ProblemAdapter(it.problemList,object:ProblemAdapter.ItemClickListener{
+                        override fun onClick(problem: Problem) {
+                            val action = ProblemListFragmentDirections.actionListFragmentToDetailFragment()
+                            action.setProblemUrl(problem.solutionUrl)
+                            findNavController().navigate(action)
+                        }
+                    })
+                    addItemDecoration(
+                        DividerItemDecoration(context,
+                            DividerItemDecoration.VERTICAL).apply {
+                            setDrawable( ContextCompat.getDrawable(context,
+                                R.drawable.divider_shape
+                            )!!)
+                        })
                 }
-            })
-            addItemDecoration(
-                DividerItemDecoration(context,
-                    DividerItemDecoration.VERTICAL).apply {
-                    setDrawable( ContextCompat.getDrawable(context,
-                        R.drawable.divider_shape
-                    )!!)
-                })
-        }
+        }.addTo(compositeDisposable)
         return binding.root
     }
 
@@ -82,5 +98,10 @@ class ProblemListFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onDestroyView() {
+        compositeDisposable.clear()
+        super.onDestroyView()
     }
 }

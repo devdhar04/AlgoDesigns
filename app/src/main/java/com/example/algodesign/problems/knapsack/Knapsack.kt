@@ -1,4 +1,4 @@
-package com.example.algodesign.knapsack
+package com.example.algodesign.problems.knapsack
 
 class Knapsack {
 
