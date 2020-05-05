@@ -1,7 +1,6 @@
 package com.example.algodesign.view.fragment
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,6 @@ import com.example.algodesign.R
 import com.example.algodesign.view.adapter.ProblemAdapter
 import com.example.algodesign.databinding.FragmentProblemListBinding
 import com.example.algodesign.model.Problem
-import com.example.algodesign.view.data.AdapterData
 import com.example.algodesign.viewmodel.ProblemViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
