@@ -29,6 +29,12 @@
       "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3320/",
       "solutionUrl": "https://gist.github.com/devdhar04/dfc63494d1ef97807f8b67845313e41d",
       "problemSourceType": "LEETCODE"
+    },
+    {
+      "title": "Counting Valleys",
+      "problemUrl": "https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup",
+      "solutionUrl": "https://gist.github.com/devdhar04/468cc84697664502e919bc78d31f6545",
+      "problemSourceType": "HACKERRANK"
     }
   ]
 }

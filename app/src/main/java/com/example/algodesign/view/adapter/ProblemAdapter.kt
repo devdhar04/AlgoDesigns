@@ -32,7 +32,7 @@ class ProblemAdapter(private val list: List<Problem>, val itemClick: ItemClickLi
                 problemDetail.text = problem.problemUrl
                 val iconDrawable = when (ProblemSourceType.valueOf(problem.problemSourceType)) {
                     ProblemSourceType.HACKERRANK -> {
-                        R.drawable.ic_launcher_background
+                        R.drawable.ic_hacker_rank
                     }
                     ProblemSourceType.LEETCODE -> {
                         R.drawable.ic_leetcode
