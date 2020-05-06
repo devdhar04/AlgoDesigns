@@ -53,11 +53,7 @@ class MainActivity : AppCompatActivity() {
                 )
             )
         reverseString(charArray)
-        val intArray = intArrayOf(1,1,1,2,2,3)
-        removeDuplicates(intArray)
-        intArray.forEach {
-            println("removeDuplicates $it")
-        }
+
         SingleNumberProblem().singleNumber(intArrayOf(1,2,3,1,2))
 
         Log.v("HappyNumberProblem","HappyNumberProblem ${ HappyNumberProblem().isHappy(1111111)}")
@@ -65,7 +61,8 @@ class MainActivity : AppCompatActivity() {
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
-        MajorityElement().execute()
+        RemoveDuplicates().execute()
+        RotateArray().execute()
 
     }
 

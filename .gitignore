@@ -151,3 +151,5 @@ build/kotlin/sessions/kotlin-compiler-5760460135599398582.salive
 .idea/sonarIssues.xml
 .idea/assetWizardSettings.xml
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.idea/sonarIssues.xml
