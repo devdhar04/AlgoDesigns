@@ -1,10 +1,10 @@
 package com.example.algodesign.problems.linkedlist
 
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 
 // https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3290/
-class MiddleOfLinkedListProblem: ProblemInterface{
+class MiddleOfLinkedListProblem: ProblemInterface {
 
     class ListNode(var `val`: Int) {
              var next: ListNode? = null

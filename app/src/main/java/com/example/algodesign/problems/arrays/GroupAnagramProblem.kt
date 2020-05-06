@@ -1,9 +1,9 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
-class GroupAnagramProblem : ProblemInterface{
+class GroupAnagramProblem : ProblemInterface {
 
     /**
      * Input: ["eat", "tea", "tan", "ate", "nat", "bat"],

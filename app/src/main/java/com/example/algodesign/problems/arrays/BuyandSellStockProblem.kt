@@ -1,9 +1,10 @@
-package com.example.algodesign.problems
+package com.example.algodesign.problems.arrays
 
 import android.util.Log
+import com.example.algodesign.utils.ProblemInterface
 
 // https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3287/
-class BuyandSellStockProblem :ProblemInterface{
+class BuyandSellStockProblem : ProblemInterface {
     //7,1,5,3,6,4
     fun maxProfit(prices: IntArray): Int {
         var diff = 0

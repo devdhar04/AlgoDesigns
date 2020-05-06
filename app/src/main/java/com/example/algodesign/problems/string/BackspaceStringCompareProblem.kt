@@ -1,10 +1,11 @@
 package com.example.algodesign.problems.string
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 //https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/
-class BackspaceStringCompareProblem : ProblemInterface {
+class BackspaceStringCompareProblem :
+    ProblemInterface {
     /**
      * Input: S = "a##c", T = "#a#c"
      */

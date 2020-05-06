@@ -1,9 +1,10 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
-class SearchInRotatedSortedArray : ProblemInterface {
+class SearchInRotatedSortedArray :
+    ProblemInterface {
     //Input: nums = [4,5,6,7,0,1,2], target = 0
     fun search(nums: IntArray, target: Int): Int {
 

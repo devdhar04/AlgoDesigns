@@ -1,7 +1,7 @@
 package com.example.algodesign.problems.string
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 /*
 https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3318/

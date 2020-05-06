@@ -1,10 +1,10 @@
 package com.example.algodesign.problems.tree
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 import kotlin.math.max
 //https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3297/
-class BinaryTreeDiameter : ProblemInterface{
+class BinaryTreeDiameter : ProblemInterface {
 
     /**
      * Example:

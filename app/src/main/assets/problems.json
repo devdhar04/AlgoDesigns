@@ -4,37 +4,57 @@
       "title": "First Bad Version",
       "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3316/",
       "solutionUrl": "https://gist.github.com/devdhar04/1f728fbfdffd4e5112ad524cfdcd9675",
-      "problemSourceType": "LEETCODE"
+      "problemSourceType": "LEETCODE",
+      "problemType": "BINARY_SEARCH"
     },
     {
       "title": "Jewels And Stones Problem",
       "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3317/",
       "solutionUrl": "https://gist.github.com/devdhar04/b4f1df7aeb08f987e28a9a49da43d5b4",
-      "problemSourceType": "LEETCODE"
+      "problemSourceType": "LEETCODE",
+      "problemType": "ARRAYS"
     },
     {
       "title": "Ransom Note Problem",
       "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3318/",
       "solutionUrl": "https://gist.github.com/devdhar04/60cdc323558692ec459306c776b71db7",
-      "problemSourceType": "LEETCODE"
+      "problemSourceType": "LEETCODE",
+      "problemType": "ARRAYS"
     },
     {
       "title": "Number Complement Problem",
       "problemUrl": "https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3319/",
       "solutionUrl": "https://gist.github.com/devdhar04/624db9f1ca6c3863f5b791b6fd8394c3",
-      "problemSourceType": "LEETCODE"
+      "problemSourceType": "LEETCODE",
+      "problemType": "BitManuplation"
     },
     {
       "title": "First Unique Character",
       "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3320/",
       "solutionUrl": "https://gist.github.com/devdhar04/dfc63494d1ef97807f8b67845313e41d",
-      "problemSourceType": "LEETCODE"
+      "problemSourceType": "LEETCODE",
+      "problemType": "STRINGS"
     },
     {
       "title": "Counting Valleys",
       "problemUrl": "https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup",
       "solutionUrl": "https://gist.github.com/devdhar04/468cc84697664502e919bc78d31f6545",
-      "problemSourceType": "HACKERRANK"
+      "problemSourceType": "HACKERRANK",
+      "problemType": "STRINGS"
+    },
+    {
+      "title": "Cycle Detection",
+      "problemUrl": "https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem",
+      "solutionUrl": "https://gist.github.com/devdhar04/bfba0f58f1434dd42069c7b9a11fa7fc",
+      "problemSourceType": "HACKERRANK",
+      "problemType": "LINKED_LIST"
+    },
+    {
+      "title": "Middle Of LinkedList",
+      "problemUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+      "solutionUrl": "https://gist.github.com/devdhar04/c67de048959957b227fb418df2437904",
+      "problemSourceType": "HACKERRANK",
+      "problemType": "LINKED_LIST"
     }
   ]
 }

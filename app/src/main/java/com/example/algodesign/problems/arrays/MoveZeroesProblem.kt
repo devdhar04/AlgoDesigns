@@ -1,7 +1,7 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 //https://leetcode.com/problems/move-zeroes/
 class MoveZeroesProblem : ProblemInterface {
     //[0,1,0,3,12]

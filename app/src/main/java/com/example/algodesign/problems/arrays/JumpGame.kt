@@ -1,10 +1,9 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
-import kotlin.math.max
+import com.example.algodesign.utils.ProblemInterface
 
-class JumpGame :ProblemInterface{
+class JumpGame : ProblemInterface {
 
     /**
      * 3,2,1,0,4

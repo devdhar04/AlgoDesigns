@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
-        CountingValley().execute()
+        MajorityElement().execute()
 
     }
 

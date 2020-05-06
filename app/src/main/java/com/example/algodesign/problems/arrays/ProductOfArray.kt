@@ -1,12 +1,12 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 /**
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3300/
  */
-class ProductOfArray :ProblemInterface{
+class ProductOfArray : ProblemInterface {
 
     /**
      *  1,2,3,4

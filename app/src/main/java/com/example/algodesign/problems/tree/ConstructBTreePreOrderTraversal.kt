@@ -1,12 +1,13 @@
 package com.example.algodesign.problems.tree
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 /**
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3305/
  */
-class ConstructBTreePreOrderTraversal : ProblemInterface {
+class ConstructBTreePreOrderTraversal :
+    ProblemInterface {
 
     class TreeNode(var `val`: Int) {
         var left: TreeNode? = null

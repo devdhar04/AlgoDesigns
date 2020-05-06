@@ -1,10 +1,10 @@
 package com.example.algodesign.problems.arrays
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 //https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3289/
-class CountingElementsProblems : ProblemInterface{
+class CountingElementsProblems : ProblemInterface {
     /**
      * Input: arr = [1,3,2,3,5,0]
     Output: 3

@@ -4,7 +4,7 @@ package com.example.algodesign.problems.arrays
  * https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3298/
  */
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 import kotlin.math.max
 
 class ContiguousArrayProblem : ProblemInterface {

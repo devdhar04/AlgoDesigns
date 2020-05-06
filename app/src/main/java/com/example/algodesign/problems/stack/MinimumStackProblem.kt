@@ -1,10 +1,9 @@
 package com.example.algodesign.problems.stack
 
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 import java.util.*
-import kotlin.math.min
 
-class MinimumStackProblem : ProblemInterface{
+class MinimumStackProblem : ProblemInterface {
 
     override fun execute() {
         val minStack =  MinStack()

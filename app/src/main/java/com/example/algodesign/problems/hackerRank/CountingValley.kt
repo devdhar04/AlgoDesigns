@@ -1,11 +1,11 @@
 package com.example.algodesign.problems.hackerRank
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 // https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 
-class CountingValley : ProblemInterface{
+class CountingValley : ProblemInterface {
 
     /** UDDDUDUU
      *  _/\       _

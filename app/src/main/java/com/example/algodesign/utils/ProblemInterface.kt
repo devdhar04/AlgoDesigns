@@ -1,4 +1,4 @@
-package com.example.algodesign.problems
+package com.example.algodesign.utils
 
 interface ProblemInterface {
     fun execute()

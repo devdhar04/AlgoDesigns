@@ -1,10 +1,11 @@
 package com.example.algodesign.problems.LruCache
 
 import android.util.Log
-import com.example.algodesign.problems.ProblemInterface
+import com.example.algodesign.utils.ProblemInterface
 
 
-class LruCache(val capacity: Int) : ProblemInterface {
+class LruCache(val capacity: Int) :
+    ProblemInterface {
     val map = HashMap<Int, Node>()
     var head: Node? = null
     var end: Node? = null
