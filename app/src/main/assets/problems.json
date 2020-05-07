@@ -55,6 +55,27 @@
       "solutionUrl": "https://gist.github.com/devdhar04/c67de048959957b227fb418df2437904",
       "problemSourceType": "HACKERRANK",
       "problemType": "LINKED_LIST"
+    },
+    {
+      "title": "Rotate an Array",
+      "problemUrl": "https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/646/",
+      "solutionUrl": "https://gist.github.com/devdhar04/df8aee80009b2c4806023101190d9312",
+      "problemSourceType": "LEETCODE",
+      "problemType": "ARRAYS"
+    },
+    {
+      "title": "Contains Duplicate",
+      "problemUrl": "https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578/",
+      "solutionUrl": "https://gist.github.com/devdhar04/d5491ceeea1594eac00118dd787a1947",
+      "problemSourceType": "LEETCODE",
+      "problemType": "ARRAYS"
+    },
+    {
+      "title": "Cousins in Binary Tree",
+      "problemUrl": "https://leetcode.com/problems/cousins-in-binary-tree/",
+      "solutionUrl": "https://gist.github.com/devdhar04/893561a3223de4c10cae44dd30f8be9b",
+      "problemSourceType": "LEETCODE",
+      "problemType": "TREE"
     }
   ]
 }

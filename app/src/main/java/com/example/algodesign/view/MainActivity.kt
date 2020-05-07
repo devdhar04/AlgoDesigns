@@ -18,6 +18,7 @@ import com.example.algodesign.problems.string.Anagram
 import com.example.algodesign.problems.string.FirstUniqueCharacter
 import com.example.algodesign.problems.string.PalindromicSubstring
 import com.example.algodesign.problems.string.RansomNote
+import com.example.algodesign.problems.tree.CousinsInBinaryTree
 
 class MainActivity : AppCompatActivity() {
 
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
 
         RemoveDuplicates().execute()
         RotateArray().execute()
+        CousinsInBinaryTree().execute()
 
     }
 
@@ -109,5 +111,6 @@ class MainActivity : AppCompatActivity() {
         }
         return 0
     }
+
 
 }
