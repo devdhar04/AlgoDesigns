@@ -2,7 +2,9 @@ package com.example.algodesign.problems.tree;
 
 import com.example.algodesign.utils.ProblemInterface;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.TreeMap;
@@ -24,19 +26,27 @@ public class TopViewOfBinaryTree implements ProblemInterface {
             return ;
         }
         Node node;
+        List<List<Integer>> list =  new ArrayList<List<Integer>>();
+
         Queue<Node> q = new LinkedList<>();
         q.add(root);
+        ArrayList rootList = new ArrayList<Integer>();
+        rootList.add(root.data);
+        list.add(rootList);
         while (!q.isEmpty()) {
             node = q.peek();
             q.remove();
             System.out.print(node.data+" ");
-
+            rootList = new ArrayList<Integer>();
             if (node.left != null) {
                 q.add(node.left);
+                rootList.add(node.data);
             }
             if (node.right != null) {
                 q.add(node.right);
+                rootList.add(node.data);
             }
+            list.add(rootList);
         }
     }
 

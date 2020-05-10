@@ -90,6 +90,13 @@
       "solutionUrl": "https://gist.github.com/devdhar04/1648d2d7f7617b22821aad9e22f24062",
       "problemSourceType": "HACKERRANK",
       "problemType": "TREE"
+    },
+    {
+      "title": "Binary Tree Level Order Traversal",
+      "problemUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "solutionUrl": "https://gist.github.com/devdhar04/f6669cf8bb584981852028cf64271e24",
+      "problemSourceType": "LEETCODE",
+      "problemType": "TREE"
     }
   ]
 }

@@ -184,3 +184,5 @@ build/kotlin/sessions/kotlin-compiler-5760460135599398582.salive
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .idea/misc.xml
 .idea/sonarIssues.xml
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.idea/sonarIssues.xml
