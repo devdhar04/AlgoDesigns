@@ -1,7 +1,5 @@
 package com.example.algodesign.problems.tree;
 
-import android.util.Log;
-
 import com.example.algodesign.utils.ProblemInterface;
 
 import java.util.LinkedList;
@@ -18,7 +16,6 @@ public class TopViewOfBinaryTree implements ProblemInterface {
 
         for (Integer data : map.values()) {
             System.out.print(data + " ");
-            Log.v("Data","Data "+data);
         }
     }
 

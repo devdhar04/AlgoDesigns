@@ -181,3 +181,6 @@ build/kotlin/sessions/kotlin-compiler-5760460135599398582.salive
 .idea/sonarlint/issuestore/f/a/fadf4f7c356c230ea1c061d1cf62ecf144bf97c0
 .idea/sonarlint/issuestore/index.pb
 .idea/misc.xml
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.idea/misc.xml
+.idea/sonarIssues.xml
