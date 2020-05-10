@@ -19,8 +19,6 @@ Japp/src/main/java/com/example/algodesign/problems/arrays/MinimumPathSum.kt,5/3
 Vapp/src/main/java/com/example/algodesign/problems/arrays/SearchInRotatedSortedArray.kt,3/0/3056991e7e27ed469d0906b451b257ca4125414e
 ‰
 Yapp/src/main/java/com/example/algodesign/problems/tree/ConstructBTreePreOrderTraversal.kt,3/b/3bf899b1743649e5fb8492eafa5342c8fafe333e
-v
-Fapp/src/main/java/com/example/algodesign/problems/LruCache/LruCache.kt,b/b/bb16fe44e34df9d63f567b72d313cb417fa3386c
 {
 Kapp/src/main/java/com/example/algodesign/problems/arrays/SubArrayProblem.kt,0/3/03bd5b75cd111c58e4ce5bb5e8da22e492019179
 t
@@ -89,3 +87,9 @@ Oapp/src/main/java/com/example/algodesign/problems/arrays/SingleNumberProblem.kt
 Lapp/src/main/java/com/example/algodesign/problems/arrays/RemoveDuplicates.kt,8/0/8025aecd838dee237fe16ea2203cee1b21d2d862
 w
 Gapp/src/main/java/com/example/algodesign/problems/arrays/RotateArray.kt,a/9/a9da0befb8a9e653aa0fe135b9d79fa192019acc
+|
+Lapp/src/main/java/com/example/algodesign/problems/arrays/DuplicateInArray.kt,6/8/68d1c656c013b5099dc43aa387132f7d0364ba90
+}
+Mapp/src/main/java/com/example/algodesign/problems/tree/CousinsInBinaryTree.kt,f/a/fadf4f7c356c230ea1c061d1cf62ecf144bf97c0
+}
+Mapp/src/main/java/com/example/algodesign/problems/arrays/CheckStraightLine.kt,2/0/20c3f19a649da3b7564881266dce0d584f11354e

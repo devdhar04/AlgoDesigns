@@ -1,4 +1,4 @@
-package com.example.algodesign.problems.LruCache
+package com.example.algodesign.problems.design
 
 import android.util.Log
 import com.example.algodesign.utils.ProblemInterface
@@ -54,7 +54,8 @@ class LruCache(val capacity: Int) :
             addNode(node)
             map[key] = node
         } else {
-            val node = Node(key, value)
+            val node =
+                Node(key, value)
             if (map.size == capacity) {
                 end?.prev?.let {
                     removeNode(it)
@@ -68,7 +69,8 @@ class LruCache(val capacity: Int) :
     }
 
     override fun execute() {
-        val cache = LruCache(2 /* capacity */)
+        val cache =
+            LruCache(2 /* capacity */)
 
         cache.put(1, 1)
         cache.put(2, 2)

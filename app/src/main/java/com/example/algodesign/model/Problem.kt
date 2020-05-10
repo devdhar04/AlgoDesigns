@@ -20,5 +20,7 @@ enum class ProblemType(val type: String) {
     GRAPHS("GRAPHS"),
     BINARY_SEARCH("BINARY_SEARCH"),
     TREE("TREE"),
-    STACK("STACK")
+    STACK("STACK"),
+    DESIGN("DESIGN"),
+    MATH("MATH")
 }

@@ -1,4 +1,4 @@
-package com.example.algodesign.problems.stack
+package com.example.algodesign.problems.design
 
 import com.example.algodesign.utils.ProblemInterface
 import java.util.*
@@ -6,7 +6,7 @@ import java.util.*
 class MinimumStackProblem : ProblemInterface {
 
     override fun execute() {
-        val minStack =  MinStack()
+        val minStack = MinStack()
         minStack.push(-2)
         minStack.push(0)
         minStack.push(-3)

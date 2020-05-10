@@ -11,14 +11,13 @@ import com.example.algodesign.R
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.problems.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
-import com.example.algodesign.problems.LruCache.LruCache
+import com.example.algodesign.problems.design.LruCache
 import com.example.algodesign.problems.arrays.*
-import com.example.algodesign.problems.hackerRank.CountingValley
+import com.example.algodesign.problems.math.ValidPerfectSquare
 import com.example.algodesign.problems.string.Anagram
-import com.example.algodesign.problems.string.FirstUniqueCharacter
 import com.example.algodesign.problems.string.PalindromicSubstring
-import com.example.algodesign.problems.string.RansomNote
 import com.example.algodesign.problems.tree.CousinsInBinaryTree
+import com.example.algodesign.problems.tree.TopViewOfBinaryTree
 
 class MainActivity : AppCompatActivity() {
 
@@ -65,6 +64,8 @@ class MainActivity : AppCompatActivity() {
         RemoveDuplicates().execute()
         RotateArray().execute()
         CousinsInBinaryTree().execute()
+        TopViewOfBinaryTree().execute()
+        ValidPerfectSquare().execute()
 
     }
 

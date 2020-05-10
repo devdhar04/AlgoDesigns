@@ -76,6 +76,20 @@
       "solutionUrl": "https://gist.github.com/devdhar04/893561a3223de4c10cae44dd30f8be9b",
       "problemSourceType": "LEETCODE",
       "problemType": "TREE"
+    },
+    {
+      "title": "Check If It Is a Straight Line",
+      "problemUrl": "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3323/",
+      "solutionUrl": "https://gist.github.com/devdhar04/88fb8174402dc471795a20d57dac1624",
+      "problemSourceType": "LEETCODE",
+      "problemType": "ARRAYS"
+    },
+    {
+      "title": "Binary Tree Height",
+      "problemUrl": "https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=trees\n",
+      "solutionUrl": "https://gist.github.com/devdhar04/1648d2d7f7617b22821aad9e22f24062",
+      "problemSourceType": "HACKERRANK",
+      "problemType": "TREE"
     }
   ]
 }
