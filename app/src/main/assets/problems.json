@@ -97,6 +97,21 @@
       "solutionUrl": "https://gist.github.com/devdhar04/f6669cf8bb584981852028cf64271e24",
       "problemSourceType": "LEETCODE",
       "problemType": "TREE"
+    },
+    {
+      "title": "Flood Fill",
+      "problemUrl": "https://leetcode.com/problems/flood-fill/",
+      "solutionUrl": "https://gist.github.com/devdhar04/3c98451b7553eaf6ee4ce93bc71d902d",
+      "problemSourceType": "LEETCODE",
+      "problemType": "GRAPH"
+    },
+    {
+      "title": "Flood Fill",
+      "problemUrl": "https://leetcode.com/problems/remove-k-digits/",
+      "solutionUrl": "https://gist.github.com/devdhar04/c2969245b24028c25706852ec7b1301e",
+      "problemSourceType": "LEETCODE",
+      "problemType": "STRING"
     }
+
   ]
 }

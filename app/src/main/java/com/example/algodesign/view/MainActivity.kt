@@ -9,15 +9,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.algodesign.R
 import com.example.algodesign.databinding.ActivityMainBinding
-import com.example.algodesign.problems.graph.AdjacencyList
 import com.example.algodesign.problems.HappyNumberProblem
-import com.example.algodesign.problems.design.LruCache
 import com.example.algodesign.problems.arrays.*
+import com.example.algodesign.problems.design.LruCache
+import com.example.algodesign.problems.design.Trie
+import com.example.algodesign.problems.graph.AdjacencyList
 import com.example.algodesign.problems.graph.FindTheTownJudge
+import com.example.algodesign.problems.graph.FloodFill
 import com.example.algodesign.problems.math.ValidPerfectSquare
 import com.example.algodesign.problems.string.Anagram
 import com.example.algodesign.problems.string.PalindromicSubstring
+import com.example.algodesign.problems.string.RemoveKDigit
+import com.example.algodesign.problems.tree.BinaryTreeZigzagLevelOrderTraversal
 import com.example.algodesign.problems.tree.CousinsInBinaryTree
+import com.example.algodesign.problems.tree.SingleElementInSortedArray
 import com.example.algodesign.problems.tree.TopViewOfBinaryTree
 
 class MainActivity : AppCompatActivity() {
@@ -31,17 +36,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(LayoutInflater.from(applicationContext))
         setContentView(binding.root)
         val host = NavHostFragment.create(R.navigation.nav_graph)
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, host).setPrimaryNavigationFragment(host).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, host)
+            .setPrimaryNavigationFragment(host).commit()
 
 
 
-        Log.v("SubArrayProblem","SubArrayProblem ${SubArrayProblem()
-            .subarraySum(intArrayOf(1,2,1,2,1),3)}")
+        Log.v(
+            "SubArrayProblem", "SubArrayProblem ${SubArrayProblem()
+                .subarraySum(intArrayOf(1, 2, 1, 2, 1), 3)}"
+        )
 
-        Log.v("countSubstrings","countSubstrings ${PalindromicSubstring()
-            .countSubstrings("Bananas")}")
-        val charArray = charArrayOf('a','b','c','d','e')
-        Anagram().minSteps("anagram","mangaar")
+        Log.v(
+            "countSubstrings", "countSubstrings ${PalindromicSubstring()
+                .countSubstrings("Bananas")}"
+        )
+        val charArray = charArrayOf('a', 'b', 'c', 'd', 'e')
+        Anagram().minSteps("anagram", "mangaar")
         AdjacencyList()
             .makeConnected(
                 3,
@@ -55,10 +65,13 @@ class MainActivity : AppCompatActivity() {
             )
         reverseString(charArray)
 
-        SingleNumberProblem().singleNumber(intArrayOf(1,2,3,1,2))
+        SingleNumberProblem().singleNumber(intArrayOf(1, 2, 3, 1, 2))
 
-        Log.v("HappyNumberProblem","HappyNumberProblem ${ HappyNumberProblem().isHappy(1111111)}")
-        Log.v("ContiguousArrayProblem","ContiguousArrayProblem ${ ContiguousArrayProblem().execute()}")
+        Log.v("HappyNumberProblem", "HappyNumberProblem ${HappyNumberProblem().isHappy(1111111)}")
+        Log.v(
+            "ContiguousArrayProblem",
+            "ContiguousArrayProblem ${ContiguousArrayProblem().execute()}"
+        )
         LastStoneWeightProblem().execute()
         LruCache(2).execute()
 
@@ -68,22 +81,36 @@ class MainActivity : AppCompatActivity() {
         TopViewOfBinaryTree().execute()
         ValidPerfectSquare().execute()
         FindTheTownJudge().execute()
+        FloodFill().execute()
+        SingleElementInSortedArray().execute()
+        RemoveKDigit().execute()
+        BinaryTreeZigzagLevelOrderTraversal().execute()
+        val trie = Trie()
+        trie.insert("apple")
+        trie.insert("aba")
+
+        Log.v("Trie", "Trie Search ${trie.search("apple")}")
+        Log.v("Trie", "Trie Search ${trie.startsWith("app")}")
+        trie.insert("app")
+        Log.v("Trie", "Trie Search ${trie.search("app")}")
+        //Log.v("Trie", "Trie Search ${trie.search("bac")}")
+
     }
 
     //'a','b','c','d'
     // https://leetcode.com/problems/reverse-string/submissions/
     fun reverseString(s: CharArray): Unit {
 
-        s.forEachIndexed{index, c ->
-            println("reverseString index ${s[s.size-index-1]}")
-            if(index< s.size/2) {
+        s.forEachIndexed { index, c ->
+            println("reverseString index ${s[s.size - index - 1]}")
+            if (index < s.size / 2) {
                 val extra = s[index]
                 s[index] = s[s.size - index - 1]
                 s[s.size - index - 1] = extra
             }
         }
 
-        s.forEachIndexed{index, c ->
+        s.forEachIndexed { index, c ->
             println("reverseString $c")
         }
     }
@@ -99,14 +126,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-    return index
+        return index
     }
+
     // Input : [2,3,1,1,4]
     //https://leetcode.com/problems/jump-game-ii/
     fun jump(nums: IntArray): Int {
         var maxJump = 0
         nums.forEachIndexed { index, i ->
-            if(nums[i] == nums.size - index){
+            if (nums[i] == nums.size - index) {
 
                 return maxJump
             }

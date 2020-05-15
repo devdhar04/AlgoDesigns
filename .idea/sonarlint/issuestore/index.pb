@@ -93,3 +93,17 @@ Lapp/src/main/java/com/example/algodesign/problems/arrays/DuplicateInArray.kt,6
 Mapp/src/main/java/com/example/algodesign/problems/tree/CousinsInBinaryTree.kt,f/a/fadf4f7c356c230ea1c061d1cf62ecf144bf97c0
 }
 Mapp/src/main/java/com/example/algodesign/problems/arrays/CheckStraightLine.kt,2/0/20c3f19a649da3b7564881266dce0d584f11354e
+{
+Kapp/src/main/java/com/example/algodesign/problems/graph/FindTheTownJudge.kt,5/e/5e1026f7dacd776d6ec520be86b647449acbe3ea
+
+Oapp/src/main/java/com/example/algodesign/problems/tree/TopViewOfBinaryTree.java,8/3/8300d599cb3b63454c5ccb0494c62a95d95d1ab8
+á
+Wapp/src/main/java/com/example/algodesign/problems/tree/BinaryTreeLevelOrderTraversal.kt,7/8/78693a27082e85ffbc694030ba4d026fb6a03b86
+t
+Dapp/src/main/java/com/example/algodesign/problems/graph/FloodFill.kt,a/5/a5093f99d3f6224d8de2a0ac2e76258e7129880a
+ç
+]app/src/main/java/com/example/algodesign/problems/tree/BinaryTreeZigzagLevelOrderTraversal.kt,c/a/ca998f446ea0715b5bbe897e726b32de1704c2fd
+Ñ
+Tapp/src/main/java/com/example/algodesign/problems/tree/SingleElementInSortedArray.kt,d/e/defcb0c7b2653bb07ae108a7ac70df213016b75b
+x
+Happ/src/main/java/com/example/algodesign/problems/string/RemoveKDigit.kt,c/b/cbe445ffa1dc9db283032e38856f121dfed232d7

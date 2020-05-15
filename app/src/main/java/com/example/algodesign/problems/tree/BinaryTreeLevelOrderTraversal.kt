@@ -2,18 +2,20 @@ package com.example.algodesign.problems.tree
 
 import com.example.algodesign.utils.ProblemInterface
 import java.util.*
+
 //https://leetcode.com/problems/binary-tree-level-order-traversal/
-class BinaryTreeLevelOrderTraversal : ProblemInterface{
+class BinaryTreeLevelOrderTraversal : ProblemInterface {
 
     class TreeNode(var `val`: Int) {
-             var left: TreeNode? = null
-             var right: TreeNode? = null
-         }
+        var left: TreeNode? = null
+        var right: TreeNode? = null
+    }
 
     fun levelOrder(root: TreeNode?): List<List<Int>> {
-    return levelOrderTraversal(root)
+        return levelOrderTraversal(root)
     }
-    private fun levelOrderTraversal(root: TreeNode?) : MutableList<List<Int>>{
+
+    private fun levelOrderTraversal(root: TreeNode?): MutableList<List<Int>> {
         val list: MutableList<List<Int>> =
             ArrayList()
         if (root == null) {
@@ -38,11 +40,11 @@ class BinaryTreeLevelOrderTraversal : ProblemInterface{
                 val data = node.right
                 rootList.add(data!!.`val`)
             }
-            if(rootList.isNotEmpty()) {
+            if (rootList.isNotEmpty()) {
                 list.add(rootList)
             }
         }
-    return list
+        return list
     }
 
 

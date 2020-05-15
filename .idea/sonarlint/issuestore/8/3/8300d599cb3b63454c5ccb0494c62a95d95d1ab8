@@ -1,0 +1,9 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Úé8 €àøŸ.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Öš®Ğÿÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(ç‘›·şÿÿÿÿ
+E
+java:S1144"/Remove this unused private "levelOrder" method.(ƒƒ ½
+\
+java:S2259"AA "NullPointerException" could be thrown; "map" is nullable here.(”í×ıÿÿÿÿ
