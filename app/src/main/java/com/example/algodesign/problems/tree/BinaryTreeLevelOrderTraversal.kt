@@ -21,35 +21,37 @@ class BinaryTreeLevelOrderTraversal : ProblemInterface {
         if (root == null) {
             return list
         }
-        var node: TreeNode
         val q: Queue<TreeNode> = LinkedList()
         q.add(root)
-        var rootList = mutableListOf(root.`val`)
-        list.add(rootList)
+
         while (!q.isEmpty()) {
-            node = q.peek()
-            q.remove()
-            rootList = ArrayList<Int>()
-            if (node.left != null) {
-                q.add(node.left)
-                val data = node.left
-                rootList.add(data!!.`val`)
+            val length = q.size
+            val levelList = mutableListOf<Int>()
+            for (i in 0 until length) {
+
+                if (q.peek().left != null) {
+                    q.offer(q.peek().left)
+
+                }
+                if (q.peek().right != null) {
+                    q.offer(q.peek().right)
+                }
+                levelList.add(q.poll().`val`)
             }
-            if (node.right != null) {
-                q.add(node.right)
-                val data = node.right
-                rootList.add(data!!.`val`)
-            }
-            if (rootList.isNotEmpty()) {
-                list.add(rootList)
-            }
+            list.add(levelList)
         }
         return list
     }
 
 
     override fun execute() {
+        val root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.left!!.left = TreeNode(4)
+        root.right!!.right = TreeNode(5)
 
+        val list = levelOrder(root)
 
     }
 }

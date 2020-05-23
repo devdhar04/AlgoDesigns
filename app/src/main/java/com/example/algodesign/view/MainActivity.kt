@@ -14,16 +14,12 @@ import com.example.algodesign.problems.arrays.*
 import com.example.algodesign.problems.design.LruCache
 import com.example.algodesign.problems.design.Trie
 import com.example.algodesign.problems.graph.AdjacencyList
+import com.example.algodesign.problems.graph.CountSquareSubMatricesWithAllOnes
 import com.example.algodesign.problems.graph.FindTheTownJudge
 import com.example.algodesign.problems.graph.FloodFill
 import com.example.algodesign.problems.math.ValidPerfectSquare
-import com.example.algodesign.problems.string.Anagram
-import com.example.algodesign.problems.string.PalindromicSubstring
-import com.example.algodesign.problems.string.RemoveKDigit
-import com.example.algodesign.problems.tree.BinaryTreeZigzagLevelOrderTraversal
-import com.example.algodesign.problems.tree.CousinsInBinaryTree
-import com.example.algodesign.problems.tree.SingleElementInSortedArray
-import com.example.algodesign.problems.tree.TopViewOfBinaryTree
+import com.example.algodesign.problems.string.*
+import com.example.algodesign.problems.tree.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -84,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         FloodFill().execute()
         SingleElementInSortedArray().execute()
         RemoveKDigit().execute()
-        BinaryTreeZigzagLevelOrderTraversal().execute()
+
         val trie = Trie()
         trie.insert("apple")
         trie.insert("aba")
@@ -95,6 +91,14 @@ class MainActivity : AppCompatActivity() {
         Log.v("Trie", "Trie Search ${trie.search("app")}")
         //Log.v("Trie", "Trie Search ${trie.search("bac")}")
 
+//        OddEvenLinkedList().execute()
+        BinaryTreeLevelOrderTraversal().execute()
+        BinaryTreeZigzagLevelOrderTraversal().execute()
+//        FindAllAnagram().execute()
+        PermutationInString().execute()
+        KthSmallestElementBST().execute()
+        CountSquareSubMatricesWithAllOnes().execute()
+        SortCharactersByFrequency().execute()
     }
 
     //'a','b','c','d'

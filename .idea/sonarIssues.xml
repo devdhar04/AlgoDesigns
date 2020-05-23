@@ -168,6 +168,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/graph/CountSquareSubMatricesWithAllOnes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/graph/CountSquareSubmatricesWithAllOnes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/graph/CountSquareSubmatriceswithAllOnes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/graph/FindTheTownJudge.kt">
           <value>
             <set />
@@ -193,7 +208,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/linkedlist/OddEvenLinkedList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/math/ValidPerfectSquare.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/stack/OnlineStockSpan.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/FinAllAnagram.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/FindAllAnagram.kt">
           <value>
             <set />
           </value>
@@ -208,12 +243,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/PermutationInString.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/RansomNote.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/RemoveKDigit.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/string/SortCharactersByFrequency.kt">
           <value>
             <set />
           </value>
@@ -259,6 +304,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/tree/HeightOfBinaryTree.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/algodesign/problems/tree/KthSmallestElementBST.kt">
           <value>
             <set />
           </value>
@@ -398,12 +448,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/p2p/viewController/P2PPendingDetailViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/payment/adapter/PaymentDetailBreakDownAdapter.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/profile/viewController/ProfileViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-android/app/src/main/java/jp/ne/paypay/android/app/view/profile/viewModel/ProfileDetailViewModel.kt">
           <value>
             <set />
           </value>
@@ -428,7 +488,47 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/analytics/GAConstants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/analytics/GATracker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/analytics/NonTracker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/analytics/Tracker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/deeplink/DeepLinkManager.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/view/BaseViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/view/payment/viewcontroller/BarcodeViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/view/payment/viewcontroller/ScanViewController.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/main/java/jp/ne/paypay/android/app/view/setting/viewcontroller/SettingViewController.kt">
           <value>
             <set />
           </value>
@@ -443,7 +543,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/nomock/java/jp/ne/paypay/android/app/AppModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../pay2-merchant-android/app/src/stg/java/jp/ne/paypay/android/app/AppModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/foo.bar">
           <value>
             <set />
           </value>

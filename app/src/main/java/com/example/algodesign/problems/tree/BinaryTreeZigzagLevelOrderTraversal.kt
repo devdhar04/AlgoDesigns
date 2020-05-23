@@ -3,6 +3,7 @@ package com.example.algodesign.problems.tree
 import com.example.algodesign.utils.ProblemInterface
 import java.util.*
 
+//https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 class BinaryTreeZigzagLevelOrderTraversal : ProblemInterface {
 
     fun zigzagLevelOrder(root: TreeNode?): List<List<Int>> {
@@ -21,43 +22,40 @@ class BinaryTreeZigzagLevelOrderTraversal : ProblemInterface {
         if (root == null) {
             return list
         }
-        var node: TreeNode
         val q: Queue<TreeNode> = LinkedList()
         q.add(root)
-        var rootList = mutableListOf(root.`val`)
-        list.add(rootList)
+        var level = 0
         while (!q.isEmpty()) {
-            node = q.peek()
-            q.remove()
-            rootList = ArrayList<Int>()
+            val length = q.size
+            level++
+            val levelList = mutableListOf<Int>()
+            for (i in 0 until length) {
 
-            if(rootList.size%2 == 0) {
+                    if (q.peek().left != null) {
+                        q.offer(q.peek().left)
+                    }
+                    if (q.peek().right != null) {
+                        q.offer(q.peek().right)
+                    }
+                if(level %2 == 0){
+                    levelList.add(0,q.poll().`val`)
+                }else{
+                    levelList.add(q.poll().`val`)
+                }
 
-                if (node.left != null) {
-                    q.add(node.left)
-                    val data = node.left
-                    rootList.add(data!!.`val`)
-                }
-                if (node.right != null) {
-                    q.add(node.right)
-                    val data = node.right
-                    rootList.add(data!!.`val`)
-                }
             }
-            if (rootList.isNotEmpty()) {
-                list.add(rootList)
-            }
+            list.add(levelList)
         }
         return list
     }
 
     override fun execute() {
-        val root = TreeNode(1)
-        root.left = TreeNode(2)
-        root.right = TreeNode(3)
-        root.left!!.left = TreeNode(4)
-        root.right!!.right = TreeNode(5)
+        val root = TreeNode(3)
+        root.left = TreeNode(9)
+        root.right = TreeNode(20)
+        root.right!!.left = TreeNode(15)
+        root.right!!.right = TreeNode(7)
 
-       val lis =  zigzagLevelOrder(root)
+       val list =  zigzagLevelOrder(root)
     }
 }

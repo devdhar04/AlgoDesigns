@@ -106,11 +106,25 @@
       "problemType": "GRAPH"
     },
     {
-      "title": "Flood Fill",
+      "title": "Remove K Digits",
       "problemUrl": "https://leetcode.com/problems/remove-k-digits/",
       "solutionUrl": "https://gist.github.com/devdhar04/c2969245b24028c25706852ec7b1301e",
       "problemSourceType": "LEETCODE",
       "problemType": "STRING"
+    },
+    {
+      "title": "Odd Even Linked List",
+      "problemUrl": "https://leetcode.com/problems/odd-even-linked-list/",
+      "solutionUrl": "https://gist.github.com/devdhar04/ef238601bdd19147b053189d58322b03",
+      "problemSourceType": "LEETCODE",
+      "problemType": "LINKEDLIST"
+    },
+    {
+      "title": "Trie",
+      "problemUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "solutionUrl": "https://gist.github.com/devdhar04/bd9161984157a75173487abe38d2b36a",
+      "problemSourceType": "LEETCODE",
+      "problemType": "TRIE"
     }
 
   ]
