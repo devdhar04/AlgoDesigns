@@ -123,3 +123,5 @@ Oapp/src/main/java/com/example/algodesign/problems/tree/KthSmallestElementBST.kt
 \app/src/main/java/com/example/algodesign/problems/graph/CountSquareSubMatricesWithAllOnes.kt,4/3/43b4d63b1a0cc61d4bcebc4c432661e034422d90
 …
 Uapp/src/main/java/com/example/algodesign/problems/string/SortCharactersByFrequency.kt,c/a/ca1e692a4ce167774ef51f6e51cb11aefd0ba21a
+…
+Uapp/src/main/java/com/example/algodesign/problems/arrays/IntervalListIntersections.kt,1/0/106a06d1c0ed90bcb2433c8496a3e9d3676430f0

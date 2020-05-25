@@ -56,6 +56,27 @@ class ConstructBTreePreOrderTraversal :
         Log.v("Node","Node ${node.`val` }")
         printInorder(node.right)
     }
+
+    class Solution {
+        fun bstFromPreorder(preorder: IntArray): TreeNode? {
+            return bstFromPreorder(preorder, 0, preorder.size)
+        }
+
+        private fun bstFromPreorder(preorder: IntArray, start:Int, end:Int): TreeNode? {
+            if (start >= end || start == preorder.size) {
+                return null
+            }
+            val root = TreeNode(preorder[start])
+            var i = start + 1
+            while (i < end && preorder[start] > preorder[i]) {
+                i++
+            }
+            root.left = bstFromPreorder(preorder, start + 1, i)
+            root.right = bstFromPreorder(preorder, i, end)
+            return root
+        }
+    }
+
     override fun execute() {
         Log.v(
             "ConstructBTreePre",

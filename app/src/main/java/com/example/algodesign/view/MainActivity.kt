@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         PermutationInString().execute()
         KthSmallestElementBST().execute()
         CountSquareSubMatricesWithAllOnes().execute()
-        SortCharactersByFrequency().execute()
+        IntervalListIntersections().execute()
     }
 
     //'a','b','c','d'
