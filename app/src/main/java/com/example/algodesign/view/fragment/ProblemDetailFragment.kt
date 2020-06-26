@@ -53,7 +53,7 @@ class ProblemDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val url = ProblemDetailFragmentArgs.fromBundle(arguments).problemUrl
+        val url = ProblemDetailFragmentArgs.fromBundle(requireArguments()).problemUrl
         binding.apply {
             progressCircular.visibility = View.VISIBLE
             toolbar.title = "Problem Solution"

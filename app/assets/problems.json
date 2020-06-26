@@ -30,5 +30,12 @@
       "solutionUrl": "https://gist.github.com/devdhar04/dfc63494d1ef97807f8b67845313e41d",
       "problemSourceType": "LEETCODE"
     }
+  ,
+    {
+      "title": "Trie - Prefix Tree",
+      "problemUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "solutionUrl": "https://gist.github.com/devdhar04/e4017933d74c402dada217a1728bdb63",
+      "problemSourceType": "LEETCODE"
+    }
   ]
 }

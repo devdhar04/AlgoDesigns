@@ -21,8 +21,8 @@ class ContiguousArrayProblem : ProblemInterface {
                 count -= 1
             } else {
                 count += 1
-            }
-            if (hashMap.containsKey(count)) {
+            }                                 //   0   1
+            if (hashMap.containsKey(count)) { // [-1 , -2  ,
                 totalSum = max(totalSum, i - hashMap[count]!!)
             } else {
                 hashMap[count] = i

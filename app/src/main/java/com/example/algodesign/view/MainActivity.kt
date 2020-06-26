@@ -11,6 +11,7 @@ import com.example.algodesign.R
 import com.example.algodesign.databinding.ActivityMainBinding
 import com.example.algodesign.problems.HappyNumberProblem
 import com.example.algodesign.problems.arrays.*
+import com.example.algodesign.problems.binarySearch.SearchInsert
 import com.example.algodesign.problems.design.LruCache
 import com.example.algodesign.problems.design.Trie
 import com.example.algodesign.problems.graph.AdjacencyList
@@ -34,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         val host = NavHostFragment.create(R.navigation.nav_graph)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, host)
             .setPrimaryNavigationFragment(host).commit()
-
-
 
         Log.v(
             "SubArrayProblem", "SubArrayProblem ${SubArrayProblem()
@@ -99,6 +98,10 @@ class MainActivity : AppCompatActivity() {
         KthSmallestElementBST().execute()
         CountSquareSubMatricesWithAllOnes().execute()
         IntervalListIntersections().execute()
+        PossibleBipartition().execute()
+        InvertBinaryTree().execute()
+
+        SearchInsert().execute()
     }
 
     //'a','b','c','d'
