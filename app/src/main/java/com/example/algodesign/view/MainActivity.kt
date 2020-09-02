@@ -19,8 +19,14 @@ import com.example.algodesign.problems.graph.CountSquareSubMatricesWithAllOnes
 import com.example.algodesign.problems.graph.FindTheTownJudge
 import com.example.algodesign.problems.graph.FloodFill
 import com.example.algodesign.problems.math.ValidPerfectSquare
-import com.example.algodesign.problems.string.*
+import com.example.algodesign.problems.string.Anagram
+import com.example.algodesign.problems.string.PalindromicSubstring
+import com.example.algodesign.problems.string.PermutationInString
+import com.example.algodesign.problems.string.RemoveKDigit
 import com.example.algodesign.problems.tree.*
+import java.util.LinkedList
+import kotlin.math.abs
+import kotlin.math.max
 
 class MainActivity : AppCompatActivity() {
 
@@ -102,6 +108,7 @@ class MainActivity : AppCompatActivity() {
         InvertBinaryTree().execute()
 
         SearchInsert().execute()
+        solution1(intArrayOf(1,4,7,3,3,5))
     }
 
     //'a','b','c','d'
@@ -147,6 +154,75 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return 0
+    }
+
+    // 1,2,3,2
+    fun solution(A: IntArray): Int {
+        if (A.size < 2)
+            return A.size
+
+        val tempList: MutableList<Int> = LinkedList()
+        tempList.apply {
+            add(A.first())
+        }
+        var start = 0
+        val end: Int = A.size
+        var count = 0
+        var length = 0
+
+        while (start < end) {
+            when {
+                tempList.contains(A[start]) -> {
+                    count++
+                    start++
+                }
+                tempList.size == 1 -> {
+                    tempList.add(A[start])
+                }
+                else -> {
+                    count = 0
+                    start--
+                    tempList[0] = A[start]
+                    tempList[1] = A[start.plus(1)]
+                }
+            }
+            if (count > length) {
+                length = count
+            }
+        }
+        return length
+    }
+
+
+    fun solution1(A: IntArray): Int {
+        val set = A.toSortedSet()
+        var maxValue = -1
+        A.forEachIndexed { i, value ->
+            A.forEachIndexed { j, it ->
+               if(value != it){
+                   val pair = if(it > value){
+                       findPair(value,it,set)
+                   }
+                   else{
+                       findPair(it,value,set)
+                   }
+                   if(pair){
+                       maxValue = max(maxValue, abs(i - j))
+                   }
+               }
+            }
+        }
+    return maxValue
+    }
+
+    private fun findPair(a: Int, b: Int,set:Set<Int>): Boolean{
+        var adjacent = true
+            for (i in a+1 until b){
+                if(set.contains(i)){
+                    adjacent = false
+                }
+            }
+    return adjacent
     }
 
 
