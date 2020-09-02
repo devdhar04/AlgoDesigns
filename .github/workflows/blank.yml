@@ -23,7 +23,7 @@ jobs:
     
       # Runs a single command using the runners shell
       - name: Run APK size comparision
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
            baseAppPath: test/assets/test.apk
            targetAppPath: test/assets/test.apk
