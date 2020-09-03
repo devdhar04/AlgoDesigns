@@ -1,6 +1,8 @@
 name: Android Feature Branch CI
 
 on:
+  pull_request:
+    branches: [master]
   push:
     branches:
       - '*'
