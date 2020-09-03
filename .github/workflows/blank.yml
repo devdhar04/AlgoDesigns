@@ -1,29 +1,13 @@
-name: Github Action Test
-
-on:   
-   pull_request:
-    branches: [master]
-
+name: Add checkout commands
+on: pull_request
 jobs:
-  build:
-    runs-on: macOS-latest
-
-
+  comment:
+    name: Add checkout commands
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout repo
-      
-    - uses: actions/checkout@v2
-    - name: Run App size diff
-      uses: ./
-      with:
-        baseAppPath: test/assets/test.apk
-        baseAppLabel: Base app
-        targetAppPath: test/assets/test.apk
-        targetAppLabel: Target app
-        summaryOutputPath: summary.md
-        metrics: apkSize, installSize, arscFile, nativeLibs, dexFiles
-        thresholds: 10, 10, 10, 10, 10
-
-    - name: Print summary
-      run: cat summary.md
+      - uses: actions/checkout@master
+      - uses: harupy/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: template.md
