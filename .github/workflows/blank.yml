@@ -16,6 +16,7 @@ jobs:
     - uses: actions/checkout@v2
       name: Checkout repo
       
+    - uses: actions/checkout@v2
     - name: Run App size diff
       uses: ./
       with:
