@@ -25,9 +25,10 @@ jobs:
         continue-on-error: true # IMPORTANT: allow pipeline to continue to Android Test Report step
         
       - name: Test Coverage Report
-        uses: ziishaned/jest-reporter-action@v0.0.1
+      - uses: actions/checkout@master  
+      - uses: ziishaned/jest-reporter-action@v0.0.1
         with:
-         github-token: ${{ secrets.GITHUB_TOKEN }}
+         github-token:  ${{ secrets.GITHUB_TOKEN }}
          test-command: ./gradlew testDebugUnitTest   
 
       - name: Android Test Report
