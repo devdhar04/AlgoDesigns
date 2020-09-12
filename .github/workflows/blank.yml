@@ -1,13 +1,12 @@
-name: Add checkout commands
-on: pull_request
+on: [push]
+
 jobs:
-  comment:
-    name: Add checkout commands
+  hello_world_job:
     runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-      - uses: actions/checkout@master
-      - uses: harupy/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          filename: template.md
+    - name: Hello world action step
+      id: hello
+      uses: devdhar04/jacoco-report
+      with:
+       repotoken: ${{ secrets.GITHUB_TOKEN }}
