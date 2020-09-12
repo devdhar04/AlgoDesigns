@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: devdhar04/jacoco-report
+      uses: jacoco-report/jacoco-report
       with:
        repotoken: ${{ secrets.GITHUB_TOKEN }}
